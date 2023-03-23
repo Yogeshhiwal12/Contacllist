@@ -1,0 +1,474 @@
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            label {
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #fff;
+            }
+
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+                width: 150px;
+                margin-left: 10px;
+
+                &:focus {
+                    outline: none;
+                    border-color: #007bff;
+                }
+            }
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 15px;
+
+            &:hover {
+                background-color: #0069d9;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            color: #fff;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            div:first-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-left: 200px;
+
+                strong {
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+                }
+            }
+
+            div:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-left: 100px;
+               
+
+                form {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    width: 300px;
+                    margin-left: -400px;
+
+                    h3 {
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                        width: 100%;
+
+                        label {
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+
+                        input {
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            font-size: 1rem;
+                            width: 100px;
+                            margin-left: 10px;
+
+                            &:focus {
+                                outline: none;
+                                border-color: #007bff;
+                            }
+                        }
+                    }
+
+                    button[type="submit"] {
+                        background-color: #007bff;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                        margin-top: 20px;
+                        margin-left: -80px;
+                        width: 180px;
+
+                        &:hover {
+                            background-color: #0062cc;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &:disabled {
+                            background-color: #6c757d;
+                            cursor: not-allowed;
+                        }
+
+                        @media (max-width: 768px) {
+                            padding: 8px 16px;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .contact-list {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 20px;
+
+                        h1 {
+                            text-align: center;
+                            font-size: 2.5rem;
+                            margin-bottom: 30px;
+                        }
+
+                        h2 {
+                            font-size: 1.8rem;
+                            margin-top: 30px;
+                            margin-bottom: 20px;
+                        }
+
+                        form {
+                            border: 1px solid #ccc;
+                            padding: 20px;
+                            border-radius: 5px;
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 15px;
+
+                                label {
+                                    font-size: 1.2rem;
+                                    margin-bottom: 5px;
+                                }
+
+                                input {
+                                    padding: 10px;
+                                    font-size: 1.2rem;
+                                    border-radius: 5px;
+                                    border: 1px solid #ccc;
+
+                                    &:focus {
+                                        outline: none;
+                                        border-color: #007bff;
+                                    }
+                                }
+                            }
+
+                            button[type="submit"] {
+                                margin-top: 20px;
+                            }
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 20px;
+                                border: 1px solid #ccc;
+                                padding: 20px;
+                                border-radius: 5px;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                div:first-child {
+                                    flex: 1;
+                                }
+
+                                div:last-child {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    form {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-bottom: 10px;
+
+                                        div {
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-bottom: 10px;
+
+                                            label {
+                                                font-size: 1.2rem;
+                                                margin-bottom: 5px;
+                                            }
+
+                                            input {
+                                                padding: 10px;
+                                                font-size: 1.2rem;
+                                                border-radius: 5px;
+                                                border: 1px solid #ccc;
+
+                                                &:focus {
+                                                    outline: none;
+                                                    border-color: #007bff;
+                                                }
+                                            }
+                                        }
+
+                                        button[type="submit"] {
+                                            margin-top: 10px;
+                                        }
+                                    }
+
+                                    button {
+                                        background-color: #dc3545;
+                                        color: #fff;
+                                        padding: 8px 16px;
+                                        border: none;
+                                        border-radius: 5px;
+                                        font-size: 1.2rem;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            background-color: #c82333;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        @media (max-width: 768px) {
+                            padding: 10px;
+
+                            h1 {
+                                font-size: 2rem;
+                                margin-bottom: 20px;
+                            }
+
+                            h2 {
+                                font-size: 1.5rem;
+                                margin-top: 20px;
+                                margin-bottom: 15px;
+                            }
+
+                            form {
+                                padding: 15px;
+                            }
+
+                            
+
+                                ul li {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 10px;
+                                    margin: 10px;
+                                    background-color: #f7f7f7;
+                                    border-radius: 5px;
+
+                                    &>div {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        &>button {
+                                            background-color: #dc3545;
+                                            color: #fff;
+                                            border: none;
+                                            border-radius: 5px;
+                                            padding: 5px 10px;
+                                            cursor: pointer;
+                                            margin-left: 10px;
+                                            font-size: 1rem;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-color: #e5e5e5;
+                                    }
+                                }
+
+                                .contact-list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding: 20px;
+                                    margin: 0 auto;
+                                    max-width: 800px;
+
+                                    h1 {
+                                        font-size: 2.5rem;
+                                        margin-bottom: 20px;
+                                        text-align: center;
+                                    }
+
+                                    h2 {
+                                        font-size: 1.8rem;
+                                        margin-top: 30px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    form {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 100%;
+                                        max-width: 400px;
+
+                                        &>div {
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-bottom: 10px;
+
+                                            &>label {
+                                                font-size: 1.2rem;
+                                                margin-bottom: 5px;
+                                            }
+
+                                            &>input {
+                                                padding: 10px;
+                                                border: 1px solid #ccc;
+                                                border-radius: 5px;
+                                                font-size: 1rem;
+                                            }
+                                        }
+
+                                        button[type="submit"] {
+                                            background-color: #007bff;
+                                            color: #fff;
+                                            padding: 10px 20px;
+                                            border: none;
+                                            border-radius: 5px;
+                                            font-size: 1.2rem;
+                                            cursor: pointer;
+                                            margin-top: 10px;
+
+                                            &:hover {
+                                                background-color: #0069d9;
+                                            }
+                                        }
+                                    }
+
+                                    ul {
+                                        list-style: none;
+                                        padding: 0;
+                                        margin: 0;
+
+                                        li:first-child {
+                                            margin-top: 30px;
+                                        }
+
+                                        li:last-child {
+                                            margin-bottom: 30px;
+                                        }
+                                    }
+                                }
+
+                                @media (max-width: 768px) {
+                                    .contact-list {
+                                        padding: 10px;
+                                    }
+                                }
+
+                                /* Small devices (landscape phones, 576px and up) */
+                                @media (min-width: 576px) {
+                                    .contact-list {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                    }
+
+                                    .contact-list li {
+                                        width: 50%;
+                                    }
+                                }
+
+                                /* Medium devices (tablets, 768px and up) */
+                                @media (min-width: 768px) {
+                                    .contact-list li {
+                                        width: 33.33%;
+                                    }
+                                }
+
+                                /* Large devices (desktops, 992px and up) */
+                                @media (min-width: 992px) {
+                                    .contact-list li {
+                                        width: 25%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
